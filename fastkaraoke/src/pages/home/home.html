@@ -1,3 +1,10 @@
+<style>
+    :root {
+      --ion-safe-area-top: 20px;
+      --ion-safe-area-bottom: 22px;
+    }
+  </style>
+
 <ion-header>
   <ion-navbar>
     <ion-title >
@@ -7,15 +14,19 @@
   </ion-navbar>
 </ion-header>
 
-
-<ion-content padding>
-  <h2>Diversao com velocidade</h2>
- <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p> 
+<ion-content fullscreen>
+  <ion-list>
+      <ion-item>
+        <!--Notificaçoes-->
+        <ion-label>Pedidos realizados</ion-label>
+        <ion-badge slot="end">22k</ion-badge>
+      </ion-item>
+  </ion-list>
+  <ion-card>
+    <img src="https://catracalivre.com.br/wp-content/uploads/2019/02/toky-karaoke-sp-divulgacao.jpg" />
+    <ion-card-content>
+      Sistema de controle de pedidos de músicas em um ambiente de karaoke.
+      Confira abaixo nas abas os <b>Pedidos</b> realizados e as <b>Musicas</b> disponiveis.
+    </ion-card-content>
+  </ion-card>
 </ion-content>
