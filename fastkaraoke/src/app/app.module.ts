@@ -8,15 +8,24 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { Page2Page } from '../pages/page2/page2';
+import { MusicasPage } from '../pages/musicas/musicas';
+import { PedidosPage } from '../pages/pedidos/pedidos';
+import { SobrePage } from '../pages/sobre/sobre';
+import { NovoPedidoPage } from '../pages/novo-pedido/novo-pedido';
+
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
+    Page2Page,
+    MusicasPage,
+    PedidosPage,
+    SobrePage,
+    NovoPedidoPage,
     TabsPage
   ],
   imports: [
@@ -26,9 +35,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
+    Page2Page,
+    MusicasPage,
+    PedidosPage,
+    SobrePage,
+    NovoPedidoPage,
     TabsPage
   ],
   providers: [
