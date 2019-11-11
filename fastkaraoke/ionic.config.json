@@ -1,5 +1,7 @@
 {
   "name": "fastkaraoke",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
