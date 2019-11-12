@@ -20,12 +20,14 @@
     "@angular/http": "5.2.11",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
+    "@ionic-native/badge": "^5.16.0",
     "@ionic-native/core": "~4.20.0",
     "@ionic-native/splash-screen": "~4.20.0",
     "@ionic-native/status-bar": "~4.20.0",
     "@ionic/storage": "^2.2.0",
     "angular": "^1.7.8",
     "cordova": "^9.0.0",
+    "cordova-plugin-badge": "^0.8.8",
     "cordova-sqlite-storage": "^3.4.0",
     "ionic": "^5.4.5",
     "ionic-angular": "3.9.5",
@@ -42,7 +44,8 @@
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
-      "cordova-sqlite-storage": {}
+      "cordova-sqlite-storage": {},
+      "cordova-plugin-badge": {}
     }
   }
 }

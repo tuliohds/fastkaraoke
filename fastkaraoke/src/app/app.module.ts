@@ -17,6 +17,7 @@ import { NovoPedidoPage } from '../pages/novo-pedido/novo-pedido';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ApplicationProvider } from '../providers/application';
+import { Badge } from '@ionic-native/badge/ngx';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { ApplicationProvider } from '../providers/application';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     HttpClient,
     ApplicationProvider,
+    Badge
   ]
 })
 export class AppModule {}
