@@ -6,19 +6,12 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page3">
-  <ion-list id="musicas-list3">
-    <ion-item color="none" id="musicas-list-item10">
-      Item 1
-    </ion-item>
-    <ion-item color="none" id="musicas-list-item11">
-      Item 2
-    </ion-item>
-    <ion-item color="none" id="musicas-list-item12">
-      Item 3
+  <div class="spacer" style="width:300px;height:20px;"></div>
+  <ion-searchbar (ionInput)="getItems($event)" placeholder="buscar música..."></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let song of songs">
+      {{song.id}} - {{song.mscNome}}
     </ion-item>
   </ion-list>
-  <div class="spacer" style="width:300px;height:20px;" id="musicas-spacer2"></div>
-  <form id="musicas-form1">
-    <ion-searchbar placeholder="" name="" id="musicas-search2"></ion-searchbar>
-  </form>
+
 </ion-content>

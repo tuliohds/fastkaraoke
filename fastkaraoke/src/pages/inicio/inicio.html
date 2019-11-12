@@ -9,8 +9,8 @@
   <ion-navbar>
     <ion-title>
       <ion-icon name="microphone" class="icon-header"></ion-icon>
-       <b class="icon-header">Fast Karaoke</b>
-  </ion-title>
+      <b class="icon-header">Fast Karaoke</b>
+    </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding >
@@ -19,9 +19,23 @@
       Bem-vindo(a) ao Fast Karaoke!
     </p>
   </div>
+  <ion-card>
+    <ion-card-header>
+      Próxima música
+    </ion-card-header>
+    <ion-card-content *ngIf="proximopedido">
+      ID: {{ proximopedido.id }} -
+      Música nº: {{ proximopedido.mscId }} -
+      Mesa nº: {{ proximopedido. mesaId }} -
+      Cliente: {{ proximopedido. pedNomeCliente }}
+    </ion-card-content>
+  </ion-card>
+
   <img src="assets/img/oyxuusJ5Tlm95TVq5tTy_karaoke.jpg" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;" />
   <div class="spacer" style="height:10px;"></div>
+
   <div style="text-align:justify;" class="show-list-numbers-and-dots">
+
     <p style="color:#000000;">
       Sistema de controle de pedidos de músicas em um ambiente de Karaokê.
     </p>
