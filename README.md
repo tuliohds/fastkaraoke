@@ -4,6 +4,7 @@
 
 
 Tecnologias utilizadas: Ionic 3 com Angular e Sass
+
 Integração com API REST
 
 ------------
