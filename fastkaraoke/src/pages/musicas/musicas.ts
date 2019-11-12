@@ -19,6 +19,7 @@ export class MusicasPage {
   ngOnInit() {
     this.appProvider.getMusicas().subscribe(res => this.songs = res)
   }
+
   initializeItems() {
     setTimeout( () => {
       this.appProvider.getMusicas().subscribe(res => this.songs = res)

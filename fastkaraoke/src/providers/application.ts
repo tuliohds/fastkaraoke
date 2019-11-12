@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import {stringify} from "@angular/core/src/util";
 
 @Injectable()
 export class ApplicationProvider {
@@ -19,5 +20,10 @@ export class ApplicationProvider {
     return this.http.get<any>(`${this.serverUrl}/pedido`);
   }
 
-
+  postPedido(data) {
+    return this.http.post(`${this.serverUrl}/pedido`, JSON.stringify(data) );
+  }
+//  mscNome
+// mesaNumero
+// pedNomeCliente
 }
